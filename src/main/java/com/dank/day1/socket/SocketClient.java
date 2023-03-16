@@ -10,7 +10,7 @@ import java.net.Socket;
  * @ClassName: SockerClient
  * @author: zyk
  * @createTime 2022年10月13日 22:15:00
- * @Description:
+ * @Description: socket 客户端
  */
 public class SocketClient {
     public static void main(String[] args) {
@@ -22,7 +22,8 @@ public class SocketClient {
             BufferedReader is  = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             //发送数据
             pw.println(msg+c);
-            pw.println(c);
+
+            pw.println("还发送送了甚多内容，比如我这个");
             pw.flush();
             //接收数据
             String line = is.readLine();
